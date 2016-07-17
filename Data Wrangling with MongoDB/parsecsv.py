@@ -7,6 +7,7 @@
 # You can use the Python string method strip() to remove the extra whitespace.
 # You have to parse only the first 10 data lines in this exercise,
 # so the returned list should have 10 entries!
+# Note that this parser is not efficient. use csv.DictReader instead.
 import os
 
 DATADIR = "data/"

@@ -1,0 +1,22 @@
+# Log started 2016-06-09 15:49
+# Record of session commands.  Please note that this will
+# likely require editing if it is to be run as a script.
+open \
+  "/Users/sethuiyer/Documents/Acad Stuffs/Data Science Stuffs/Data Science A-Z/ChurnModellingUntested.csv"
+dummify Gender
+dummify Geography
+rename 17 France
+rename 18 Spain
+rename 19 Germany
+rename 15 Female
+rename 16 Male
+Log_Balance = log10(Balance+1)
+# model 1
+logit Exited 0 CreditScore Age NumOfProducts IsActiveMember Female \
+  Germany Tenure Log_Balance --p-values
+fcast 10001 11000 --static
+# model 1
+fcast 10001 11000 P_hat_test_data
+# store \
+  "/Users/sethuiyer/Documents/Acad Stuffs/Data Science Stuffs/Data Science A-Z/ChurnModellingUntested-Forecast.csv" \
+   RowNumber P_hat_test_data --csv

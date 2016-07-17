@@ -1,0 +1,20 @@
+# Log started 2016-06-06 16:43
+# Record of session commands.  Please note that this will
+# likely require editing if it is to be run as a script.
+open \
+  "/Users/sethuiyer/Documents/Acad Stuffs/Data Science Stuffs/Data Science A-Z/Churn-Modelling.csv"
+dummify Gender
+dummify Gender
+dummify Geography
+rename 19 Germany
+rename 15 Female
+Log_Balance = log10(Balance+1)
+# model 1
+logit Exited 0 Age CreditScore NumOfProducts IsActiveMember Germany \
+  Tenure Log_Balance
+# model 2
+logit Exited 0 Age CreditScore NumOfProducts IsActiveMember Germany \
+  Tenure Log_Balance
+# model 3
+logit Exited 0 Age CreditScore NumOfProducts IsActiveMember Germany \
+  Tenure Log_Balance --p-values

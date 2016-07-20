@@ -38,6 +38,50 @@ def pretty_print(data, indent=4):
 
 
 def main():
+    #number of bands with name first aid kit as band name
+
+    results=query_by_name(ARTIST_URL,query_type["simple"],"First aid kit")
+    n=0
+    for artist in results["artists"]:
+        if artist["name"].lower() == "first aid kit":
+            n+=1
+    print "{} bands named first aid kit".format(n)
+    
+    #begin-area name of queen
+    results = query_by_name(ARTIST_URL, query_type["simple"], "queen")
+    for i, artist in enumerate(results["artists"]):
+        if artist["name"].lower() == "queen":
+            try:
+                print artist["begin-area"]["name"]
+            except:
+                None
+# spanish alias for beatles?
+    results = query_by_name(ARTIST_URL, query_type["simple"], "beatles")
+    for artist in results["artists"]:
+        if artist["name"].lower() == "the beatles":
+            for aliases in artist["aliases"]:
+                if aliases["locale"] == "es":
+                    try:
+                        print aliases["name"]
+                    except:
+                        None
+    # nirvana disambiguation?
+    results = query_by_name(ARTIST_URL, query_type["simple"], "Nirvana")
+    for artist in results["artists"]:
+        if artist["name"].lower() == "nirvana":
+            try:
+                print artist["disambiguation"]
+            except:
+                None
+    # when was one direction formed?
+    results = query_by_name(ARTIST_URL, query_type["simple"], "one direction")
+    for artist in results["artists"]:
+        if artist["name"].lower() == "one direction":
+            try:
+                print artist["life-span"]["begin"]
+            except:
+                None
+    """
     results = query_by_name(ARTIST_URL, query_type["simple"], "Nirvana")
     pretty_print(results)
 
@@ -54,6 +98,7 @@ def main():
     print "\nALL TITLES:"
     for t in release_titles:
         print t
+"""
 
 
 if __name__ == '__main__':

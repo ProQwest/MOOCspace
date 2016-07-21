@@ -1,0 +1,1 @@
+This session deals with extracting data from common formats like csv, excel and json files.

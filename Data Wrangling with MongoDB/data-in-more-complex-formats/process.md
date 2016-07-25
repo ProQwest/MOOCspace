@@ -1,0 +1,1 @@
+Error is the line 657. As you can see in that line, a new XML document starts. We must split the XML document before passing it to the parser.

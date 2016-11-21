@@ -1,6 +1,5 @@
 import pandas
 
-
 def get_hourly_entries(df):
     '''
     The data in the MTA Subway Turnstile data reports on the cumulative
@@ -9,18 +8,16 @@ def get_hourly_entries(df):
     (i.e., unique SCP, C/A, and UNIT).  This function should change
     these cumulative entry numbers to a count of entries since the last reading
     (i.e., entries since the last row in the dataframe).
-
+    
     More specifically, you want to do two things:
        1) Create a new column called ENTRIESn_hourly
-       2) Assign to the column the difference between ENTRIESn of
-          the current row and the previous row. If there is any NaN,
-          fill/replace it with 1.
-
-    You may find the pandas functions shift() and fillna() to be helpful in
-    this exercise.
-
+       2) Assign to the column the difference between ENTRIESn of the current row 
+          and the previous row. If there is any NaN, fill/replace it with 1.
+    
+    You may find the pandas functions shift() and fillna() to be helpful in this exercise.
+    
     Examples of what your dataframe should look like at the end of this exercise:
-
+    
            C/A  UNIT       SCP     DATEn     TIMEn    DESCn  ENTRIESn    EXITSn  ENTRIESn_hourly
     0     A002  R051  02-00-00  05-01-11  00:00:00  REGULAR   3144312   1088151                1
     1     A002  R051  02-00-00  05-01-11  04:00:00  REGULAR   3144335   1088159               23
@@ -33,7 +30,12 @@ def get_hourly_entries(df):
     8     A002  R051  02-00-00  05-02-11  08:00:00  REGULAR   3144941   1088420               36
     9     A002  R051  02-00-00  05-02-11  12:00:00  REGULAR   3145094   1088753              153
     10    A002  R051  02-00-00  05-02-11  16:00:00  REGULAR   3145337   1088823              243
+    ...
+    ...
 
     '''
-    df['ENTRIESn_hourly'] = df['ENTRIESn'] - df['ENTRIESn'].shift(1)
-    return df.fillna(1)
+    #your code here
+    df["ENTRIESn_hourly"]=df["ENTRIESn"]-df["ENTRIESn"].shift(periods=1)
+    df["ENTRIESn_hourly"].fillna(value=1,inplace=True)
+    
+    return df

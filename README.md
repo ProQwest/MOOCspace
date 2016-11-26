@@ -8,13 +8,13 @@ Courses Finished :white_check_mark:
 3. Data Science A-Z (Udemy)
 4. Introduction to Artificial Intelligence (edX)
 5. Taming Big Data with MapReduce and Hadoop
+6. Machine Learning (Coursera)
 
 Courses in Progress :grey_exclamation:
 ---
-1. Machine Learning (Coursera)
-2. Mining Massive Datasets (Lagunita)
-3. Statistical Learning (Lagunita)
-4. Developing Data Products (Coursera)
+1. Mining Massive Datasets (Lagunita)
+2. Statistical Learning (Lagunita)
+3. Developing Data Products (Coursera)
 
 Courses to do :x:
 ---

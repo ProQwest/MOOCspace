@@ -12,16 +12,11 @@ Courses Finished :white_check_mark:
 
 Courses in Progress :grey_exclamation:
 ---
-1. Mining Massive Datasets (Lagunita)
-2. Statistical Learning (Lagunita)
-3. Developing Data Products (Coursera)
+1. Statistical Learning (Lagunita)
+2. Reinforcement Learning (Udacity)
+3. Deep Learning (Udacity)
+4. Computer Vision (Udacity)
 
-Courses to do :x:
----
-1. Convex Optimization
-5. Probablistic Graphical Models (Coursera)
-6. Big Data Graph analytics
-7. Deep Learning (Udacity)
 
 
 

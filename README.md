@@ -14,7 +14,7 @@ Courses in Progress :grey_exclamation:
 ---
 1. Statistical Learning (Lagunita)
 2. Reinforcement Learning (Udacity)
-3. Deep Learning (Udacity)
+3. Deep Learning (Hugo Larochelle - Université de Sherbrooke)
 4. Computer Vision (Udacity)
 
 

@@ -15,6 +15,7 @@ Courses in Progress :grey_exclamation:
 1. Machine Learning (Coursera)
 2. Neural Networks for Machine Learning (Coursera)
 3. Introduction to Artificial Intelligence (Udacity)
+4. CNN for Visual Recognition
 
 
 Courses to do in future :soon:

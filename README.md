@@ -23,6 +23,7 @@ Courses to do in future :soon:
 2. Reinforcement Learning (Udacity)
 3. Deep Learning (Hugo Larochelle - Université de Sherbrooke)
 4. Computer Vision (Udacity)
+5. Scientific Julia Programming
 
 
 

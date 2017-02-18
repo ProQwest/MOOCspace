@@ -8,9 +8,16 @@ Courses Finished :white_check_mark:
 3. Data Science A-Z (Udemy)
 4. Introduction to Artificial Intelligence (edX)
 5. Taming Big Data with MapReduce and Hadoop
-6. Machine Learning (Coursera)
+
 
 Courses in Progress :grey_exclamation:
+---
+1. Machine Learning (Coursera)
+2. Neural Networks for Machine Learning (Coursera)
+3. Introduction to Artificial Intelligence (Udacity)
+
+
+Courses to do in future :soon:
 ---
 1. Statistical Learning (Lagunita)
 2. Reinforcement Learning (Udacity)

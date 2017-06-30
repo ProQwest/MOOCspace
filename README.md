@@ -1,8 +1,5 @@
-# my-mooc-workspace
-This repository contains code of some of the MOOCs that I have done from Udemy, Udacity, edX, Coursera etc
-
-Aim of this repository is to guide people if they want to do online courses in the field of Artificial Intelligence.
-
+# MOOCspace
+This repository contains solutions to the programming assignments of AI related MOOCs that I have done from various online resources. The main aim of this repository is to provide AI enthusiasts an good checklist of courses to do.
 
 Courses Finished :white_check_mark:
 ---
@@ -29,10 +26,4 @@ Courses to do in future :soon:
 3. Deep Learning (Hugo Larochelle - Université de Sherbrooke)
 4. Reinforcement Learning (Udacity)
 
-
-
-
-
-
-
-
+Course links can be found in the READMEs of respective courses.
